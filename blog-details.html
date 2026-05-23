@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Blog Details || Itco - IT Solutions &amp; Technology Services</title>
+  <meta name="description" content="Everything you need to learn about IT Solution for your Company – read the latest insights from the Itco blog."/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa-solid fa-angles-up"></i></button>
+
+  <!-- ============================== HEADER ============================== -->
+  <header class="main-header main-header-one">
+    <div id="sticky-header" class="menu-area">
+      <div class="container">
+        <div class="menu-area__inner">
+          <div class="mobile-nav-toggler">
+            <div class="site-ligo"><a href="index.html" style="font-weight:800;font-size:22px;color:#2bbca2;font-family:'Outfit',sans-serif;text-decoration:none;">ITCO</a></div>
+            <i class="fas fa-bars" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"></i>
+          </div>
+          <div class="menu-wrap d-none d-lg-block">
+            <nav class="menu-nav">
+              <div class="main-header-one__inner">
+                    <div class="main-header-one__top">
+                  <div class="container">
+                    <div class="main-header-one__top-inner">
+                      <div class="main-header-one__top-left">
+                        <div class="header-contact-info"><ul>
+                          <li><div class="icon-box"><i class="fas fa-map-marker-alt"></i></div><p>Jones Street, New York, USA</p></li>
+                          <li><div class="icon-box"><i class="fas fa-envelope"></i></div><p><a href="mailto:Info@example.com">Info@example.com</a></p></li>
+                          <li><div class="icon-box"><i class="fas fa-phone"></i></div><p><a href="tel:+70264566579">+70 264 566 579</a></p></li>
+                        </ul></div>
+                      </div>
+                      <div class="main-header-one__top-right">
+                        <div class="header-social-links"><ul>
+                          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="main-header-one__bottom">
+                  <div class="container">
+                    <div class="main-header-one__bottom-inner bg-white shadow-sm d-flex align-items-center justify-content-between">
+                      <div class="main-header-one__bottom-left d-flex align-items-center">
+                        <div class="site-ligo d-flex align-items-center">
+                          <a href="index.html">
+                            <img src="images/image (1).png" alt="Itco Logo" width="105" height="40"/>
+                            <span style="display:none; font-weight:800; font-size:22px; color:#2bbca2; font-family:'Outfit',sans-serif;">ITCO</span>
+                          </a>
+                        </div>
+                        <div class="navbar-wrap main-menu">
+                          <ul class="navigation">
+                            <li class="menu-item-has-children"><a href="#">Home <i class="fas fa-chevron-down ms-1" style="font-size: 10px;"></i></a><ul class="sub-menu"><li><a href="index.html">Home One</a></li></ul></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="menu-item-has-children"><a href="#">Services <i class="fas fa-chevron-down ms-1" style="font-size: 10px;"></i></a><ul class="sub-menu"><li><a href="services.html">Services</a></li></ul></li>
+                            <li class="menu-item-has-children"><a href="#">Pages <i class="fas fa-chevron-down ms-1" style="font-size: 10px;"></i></a><ul class="sub-menu"><li><a href="team.html">Team</a></li></ul></li>
+                            <li class="menu-item-has-children"><a href="#" class="ui-active-parent-1">Blog <i class="fas fa-chevron-down ms-1" style="font-size: 10px;"></i></a><ul class="sub-menu"><li><a href="blog-details.html" class="ui-active-1">Blog Details</a></li></ul></li>
+                            <li><a href="contact.html">Contact</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="main-header-one__bottom-right d-flex align-items-center">
+                        <div class="btn-box"><a class="thm-btn" href="contact.html"><span class="txt">Get A Free Quote</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title"><a href="index.html" style="font-weight:800;font-size:22px;color:#2bbca2;font-family:'Outfit',sans-serif;text-decoration:none;">ITCO</a></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li class="mb-2"><a href="index.html" class="d-block py-2 px-3 text-dark fw-semibold" data-bs-dismiss="offcanvas">Home</a></li>
+        <li class="mb-2"><a href="about.html" class="d-block py-2 px-3 text-dark fw-semibold" data-bs-dismiss="offcanvas">About</a></li>
+        <li class="mb-2"><a href="services.html" class="d-block py-2 px-3 text-dark fw-semibold" data-bs-dismiss="offcanvas">Services</a></li>
+        <li class="mb-2"><a href="team.html" class="d-block py-2 px-3 text-dark fw-semibold" data-bs-dismiss="offcanvas">Team</a></li>
+        <li class="mb-2"><a href="blog-details.html" class="d-block py-2 px-3 fw-semibold" style="color:#2bbca2;" data-bs-dismiss="offcanvas">Blog</a></li>
+        <li class="mb-2"><a href="contact.html" class="d-block py-2 px-3 text-dark fw-semibold" data-bs-dismiss="offcanvas">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============================== BREADCRUMB ============================== -->
+  <section id="site-breadcumb">
+    <div class="site-breadcumb-wrapper">
+      <div class="container">
+        <div class="breadcumb-content text-center">
+          <h1 class="breadcumb-title">Blog Details</h1>
+          <ul class="page-navigator">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li>Blog Details</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== BLOG DETAILS ============================== -->
+  <section class="blog-detail-page sec-ptb">
+    <div class="container">
+      <div class="row">
+
+        <!-- Main Article -->
+        <div class="col-lg-8 mb-5 mb-lg-0">
+          <div class="blog-item-details">
+            <div class="img-box">
+              <img src="images/image (18).png" alt="blog" width="800" height="420" style="width:100%;height:420px;object-fit:cover;"/>
+            </div>
+            <div class="content-box">
+              <!-- Meta -->
+              <div class="meta-box mb-3">
+                <ul class="meta-info d-flex flex-wrap gap-3">
+                  <li><div class="icon"><i class="fas fa-user"></i></div><span><a href="#">Admin</a></span></li>
+                  <li><div class="icon"><i class="fas fa-calendar"></i></div><span><a href="#">October 2, 2023</a></span></li>
+                  <li><div class="icon"><i class="fas fa-comments"></i></div><span><a href="#">3 Comments</a></span></li>
+                  <li><div class="icon"><i class="fas fa-tag"></i></div><span><a href="#">IT Solutions</a></span></li>
+                </ul>
+              </div>
+
+              <!-- Title -->
+              <h2 style="font-size:28px; margin-bottom:20px; color:#0d1b2a;">Everything you need to learn about IT Solution for your Company.</h2>
+
+              <!-- Body -->
+              <div class="blog-body">
+                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+                <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+
+                <blockquote>
+                  <i class="fas fa-quote-left"></i>
+                  <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps.</p>
+                </blockquote>
+
+                <h4>Why IT Solutions Matter for Your Business</h4>
+                <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+
+                <ul class="info-list">
+                  <li>Development of Financial Models for businesses</li>
+                  <li>Nifty team is a diverse network of consultants</li>
+                  <li>Industry professionals with a global mindset</li>
+                  <li>Solve Business Problems And Automate Workflows</li>
+                  <li>Unlock The Hidden Power Of The Data You Already Have</li>
+                </ul>
+
+                <p>Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Overrride the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+
+                <div class="row g-3 my-3">
+                  <div class="col-sm-6">
+                    <img src="images/image (19).png" alt="blog-detail" class="img-fluid" style="border-radius:10px; width:100%; object-fit:cover; max-height:200px;"/>
+                  </div>
+                  <div class="col-sm-6">
+                    <img src="images/image (20).png" alt="blog-detail" class="img-fluid" style="border-radius:10px; width:100%; object-fit:cover; max-height:200px;"/>
+                  </div>
+                </div>
+
+                <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+              </div>
+
+              <!-- Tags & Share -->
+              <div class="blog-tags-share">
+                <div class="blog-tags d-flex align-items-center gap-3">
+                  <div class="tag-title"><h6>Tags:</h6></div>
+                  <ul class="d-flex gap-2 list-unstyled mb-0">
+                    <li><a href="#">IT</a></li>
+                    <li><a href="#">Software</a></li>
+                    <li><a href="#">Data</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Cloud</a></li>
+                  </ul>
+                </div>
+                <div class="blog-share d-flex align-items-center gap-3">
+                  <div class="tag-title"><h6>Share:</h6></div>
+                  <ul class="d-flex gap-2 list-unstyled mb-0">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Author Bio -->
+              <div class="blog-autor-bio d-flex gap-4">
+                <div class="avater">
+                  <img src="images/image (3).png" alt="author" width="110" height="110"/>
+                </div>
+                <div class="avater-content">
+                  <h4>Alex Martin</h4>
+                  <span>Ceo And Founder</span>
+                  <ul class="autor-social list-unstyled d-flex gap-2">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  </ul>
+                  <p>Alex is the founder and CEO of Itco, with over 15 years of experience in IT solutions and software development. He is passionate about helping businesses leverage technology to achieve their goals.</p>
+                </div>
+              </div>
+
+              <!-- Comments -->
+              <div class="blog-comments mt-5">
+                <h3>3 Comments</h3>
+                <ul class="comment-list list-unstyled">
+                  <li class="comment-item">
+                    <div class="post-comment">
+                      <div class="comment-avater"><img src="https://ui-avatars.com/api/?name=John+Smith&size=70&background=2bbca2&color=fff" alt="commenter"/></div>
+                      <div class="comment-content">
+                        <h5 class="name">John Smith</h5>
+                        <div class="commented-on"><i class="fas fa-calendar"></i> October 5, 2023</div>
+                        <p class="text">Great article! Very informative and well-written. The insights on IT solutions really help businesses understand the value of digital transformation.</p>
+                        <a class="reply-btn" href="#comment-form"><i class="fas fa-reply"></i> Reply</a>
+                      </div>
+                    </div>
+                    <!-- Child comment -->
+                    <ul class="children list-unstyled">
+                      <li class="comment-item">
+                        <div class="post-comment">
+                          <div class="comment-avater"><img src="https://ui-avatars.com/api/?name=Admin&size=70&background=062c24&color=fff" alt="admin"/></div>
+                          <div class="comment-content">
+                            <h5 class="name">Admin</h5>
+                            <div class="commented-on"><i class="fas fa-calendar"></i> October 6, 2023</div>
+                            <p class="text">Thank you, John! We're glad you found it helpful. Stay tuned for more insightful articles.</p>
+                            <a class="reply-btn" href="#comment-form"><i class="fas fa-reply"></i> Reply</a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="comment-item">
+                    <div class="post-comment">
+                      <div class="comment-avater"><img src="https://ui-avatars.com/api/?name=Maria+Johnson&size=70&background=1fa18a&color=fff" alt="commenter"/></div>
+                      <div class="comment-content">
+                        <h5 class="name">Maria Johnson</h5>
+                        <div class="commented-on"><i class="fas fa-calendar"></i> October 8, 2023</div>
+                        <p class="text">This is exactly what our company needed. We've been struggling with our IT infrastructure and this article gave us a clear roadmap to follow.</p>
+                        <a class="reply-btn" href="#comment-form"><i class="fas fa-reply"></i> Reply</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Comment Form -->
+              <div class="blog-contact-form" id="comment-form">
+                <h3>Leave A Comment</h3>
+                <p>Your email address will not be published. Required fields are marked *</p>
+                <form action="#" method="post" novalidate>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="contact-field">
+                        <input type="text" name="name" id="comment-name" placeholder="Full Name *" required/>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="contact-field">
+                        <input type="email" name="email" id="comment-email" placeholder="Email Address *" required/>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="contact-field">
+                        <input type="url" name="website" id="comment-website" placeholder="Website (Optional)"/>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="contact-field">
+                        <textarea name="comment" id="comment-message" rows="5" placeholder="Write your comment here..."></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="thm-btn"><span class="txt">Post Comment</span></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+            </div><!-- /.content-box -->
+          </div><!-- /.blog-item-details -->
+        </div><!-- /.col-lg-8 -->
+
+        <!-- ============================== SIDEBAR ============================== -->
+        <div class="col-lg-4 sidebar">
+
+          <!-- Search -->
+          <div class="sidebar-item blog-sidebar-search">
+            <h3 class="stitle">Search Here</h3>
+            <form action="#" method="get">
+              <input type="search" name="s" id="sidebar-search" placeholder="Search..."/>
+              <button type="submit" id="sidebar-search-btn"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+
+          <!-- Categories -->
+          <div class="sidebar-item">
+            <h3 class="stitle">Categories</h3>
+            <ul class="cat-list list-unstyled">
+              <li><a href="#">IT Solutions <span class="child">(5)</span></a></li>
+              <li><a href="#">Software Development <span class="child">(3)</span></a></li>
+              <li><a href="#">Data Analysis <span class="child">(2)</span></a></li>
+              <li><a href="#">App Development <span class="child">(4)</span></a></li>
+              <li><a href="#">Cyber Security <span class="child">(6)</span></a></li>
+              <li><a href="#">Cloud Solutions <span class="child">(2)</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Recent Posts -->
+          <div class="sidebar-item">
+            <h3 class="stitle">Recent Posts</h3>
+            <ul class="list-unstyled">
+              <li class="d-flex gap-3 mb-3 align-items-start">
+                <div style="width:90px;height:70px;border-radius:8px;overflow:hidden;flex-shrink:0;">
+                  <img src="images/image (22).png" alt="recent" style="width:100%;height:100%;object-fit:cover;"/>
+                </div>
+                <div>
+                  <p style="font-size:12px;color:#888;margin-bottom:4px;"><i class="fas fa-calendar me-1 text-success"></i>Oct 2, 2023</p>
+                  <h6 style="font-size:14px;margin:0;"><a href="blog-details.html" class="text-dark">Everything you need to learn about IT Solution.</a></h6>
+                </div>
+              </li>
+              <li class="d-flex gap-3 mb-3 align-items-start">
+                <div style="width:90px;height:70px;border-radius:8px;overflow:hidden;flex-shrink:0;">
+                  <img src="images/image (23).png" alt="recent" style="width:100%;height:100%;object-fit:cover;"/>
+                </div>
+                <div>
+                  <p style="font-size:12px;color:#888;margin-bottom:4px;"><i class="fas fa-calendar me-1 text-success"></i>Dec 27, 2023</p>
+                  <h6 style="font-size:14px;margin:0;"><a href="blog-details.html" class="text-dark">New Technology for System Security.</a></h6>
+                </div>
+              </li>
+              <li class="d-flex gap-3 mb-3 align-items-start">
+                <div style="width:90px;height:70px;border-radius:8px;overflow:hidden;flex-shrink:0;">
+                  <img src="images/image (14).png" alt="recent" style="width:100%;height:100%;object-fit:cover;"/>
+                </div>
+                <div>
+                  <p style="font-size:12px;color:#888;margin-bottom:4px;"><i class="fas fa-calendar me-1 text-success"></i>Dec 27, 2023</p>
+                  <h6 style="font-size:14px;margin:0;"><a href="blog-details.html" class="text-dark">Analytical Solutions for your Business.</a></h6>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tags -->
+          <div class="sidebar-item">
+            <h3 class="stitle">Popular Tags</h3>
+            <div class="blog-tags">
+              <ul class="d-flex flex-wrap gap-2 list-unstyled mb-0">
+                <li><a href="#">IT</a></li>
+                <li><a href="#">Software</a></li>
+                <li><a href="#">Data</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Cloud</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Mobile</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="sidebar-item" style="background:var(--thm-green-bg);">
+            <h3 class="stitle" style="color:#fff;">Newsletter</h3>
+            <p style="color:rgba(255,255,255,.7); font-size:14px; margin-bottom:16px;">Subscribe to get the latest IT tips and insights.</p>
+            <div class="Subscribe-form flex-column">
+              <input type="email" name="sidebar-email" id="sidebar-newsletter-email" class="form-control mb-2" placeholder="Enter Your Email"/>
+              <button type="submit" class="thm-btn w-100 justify-content-center"><span class="txt">Subscribe Now</span></button>
+            </div>
+          </div>
+
+        </div><!-- /.col-lg-4 sidebar -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer-sec">
+    <div class="section-overlay sec-pt">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-xl-3 mb-4">
+            <div class="footer-widget">
+              <div class="mb-3"><a href="index.html" style="font-weight:800;font-size:22px;color:#2bbca2;font-family:'Outfit',sans-serif;text-decoration:none;">ITCO</a></div>
+              <p class="ft-text">Mauris ut enim sit amet lacus ornare ullamcor. Praesent placerat nequ puru rhoncu tincidunt odio ultrices.</p>
+              <div class="footer-social-icon d-flex">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 offset-xl-1 col-xl-2 mb-4">
+            <div class="footer-widget">
+              <h4 class="footer-widget-title tx-white">Our Services</h4>
+              <div class="footer-links"><ul>
+                <li><a href="services.html">Tech Solutions</a></li>
+                <li><a href="services.html">Digital Marketing</a></li>
+                <li><a href="services.html">Web Development</a></li>
+                <li><a href="services.html">IT Consulting</a></li>
+              </ul></div>
+            </div>
+          </div>
+          <div class="col-sm-6 offset-xl-1 col-xl-2 mb-4">
+            <div class="footer-widget">
+              <h4 class="footer-widget-title tx-white">Useful Links</h4>
+              <div class="footer-links"><ul>
+                <li><a href="about.html">What We Do</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="#">Faq Ask</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog-details.html">Blog</a></li>
+              </ul></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3 mb-4">
+            <div class="footer-widget">
+              <h4 class="footer-widget-title tx-white">Recent Post</h4>
+              <ul class="list-unstyled">
+                <li class="d-flex gap-3 mb-3">
+                  <img src="images/image (21).png" alt="blog" style="width:80px;height:65px;object-fit:cover;border-radius:8px;flex-shrink:0;"/>
+                  <div><p style="font-size:12px;color:rgba(255,255,255,.6);margin-bottom:4px;"><i class="fas fa-calendar me-1"></i>Dec 27, 2023</p><a href="blog-details.html" style="font-size:13px;color:rgba(255,255,255,.85);">IT Solution for your Company.</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid"><div class="row"><div class="col p-0"><hr class="footer-hr"/></div></div></div>
+      <div class="container">
+        <div class="row footer-copyright">
+          <div class="col"><p class="mb-0 text-center" style="color:rgba(255,255,255,.6);font-size:14px;">&copy; <a href="#" style="color:#2bbca2;">Qubohub</a> 2024. All Rights Reserved</p></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
