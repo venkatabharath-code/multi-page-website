@@ -12,7 +12,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
   <!-- Scroll to top -->
@@ -91,41 +91,11 @@
                             </div>
                             <div class="navbar-wrap main-menu">
                               <ul class="navigation">
-                                <li class="menu-item-has-children">
-                                  <a href="#" class="ui-active-parent-1">Home <i class="fas fa-chevron-down ms-1" style="font-size: 10px;"></i></a>
-                                  <ul class="sub-menu">
-                                    <li><a href="index.html" class="ui-active-1">Home One</a></li>
-                                    <li><a href="#">Home Two</a></li>
-                                    <li><a href="#">Home Three</a></li>
-                                  </ul>
-                                </li>
+                                <li><a href="index.html" class="ui-active-parent-1">Home</a></li>
                                 <li><a href="about.html">About</a></li>
-                                <li class="menu-item-has-children">
-                                  <a href="#">Services <i class="fas fa-chevron-down ms-1" style="font-size: 10px;"></i></a>
-                                  <ul class="sub-menu">
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="#">Service Details</a></li>
-                                  </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                  <a href="#">Pages <i class="fas fa-chevron-down ms-1" style="font-size: 10px;"></i></a>
-                                  <ul class="sub-menu">
-                                    <li><a href="team.html">Team</a></li>
-                                    <li><a href="#">Team Details</a></li>
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">Project Details</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Price Plan</a></li>
-                                    <li><a href="#">FAQ</a></li>
-                                  </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                  <a href="#">Blog <i class="fas fa-chevron-down ms-1" style="font-size: 10px;"></i></a>
-                                  <ul class="sub-menu">
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                  </ul>
-                                </li>
+                                <li class="menu-item-has-children"><a href="#">Services <i class="fas fa-chevron-down ms-1" style="font-size: 10px;"></i></a><ul class="sub-menu"><li><a href="services.html">Services</a></li><li><a href="service-details.html">Service Details</a></li></ul></li>
+                                <li class="menu-item-has-children"><a href="#">Pages <i class="fas fa-chevron-down ms-1" style="font-size: 10px;"></i></a><ul class="sub-menu"><li><a href="team.html">Team</a></li><li><a href="projects.html">Projects</a></li></ul></li>
+                                <li class="menu-item-has-children"><a href="#">Blog <i class="fas fa-chevron-down ms-1" style="font-size: 10px;"></i></a><ul class="sub-menu"><li><a href="blog.html">Blog</a></li><li><a href="blog-details.html">Blog Details</a></li></ul></li>
                                 <li><a href="contact.html">Contact</a></li>
                               </ul>
                             </div>
@@ -161,9 +131,33 @@
       <ul class="list-unstyled">
         <li class="mb-2"><a href="index.html" class="d-block py-2 px-3 text-dark fw-semibold" data-bs-dismiss="offcanvas">Home</a></li>
         <li class="mb-2"><a href="about.html" class="d-block py-2 px-3 text-dark fw-semibold" data-bs-dismiss="offcanvas">About</a></li>
-        <li class="mb-2"><a href="services.html" class="d-block py-2 px-3 text-dark fw-semibold" data-bs-dismiss="offcanvas">Services</a></li>
-        <li class="mb-2"><a href="team.html" class="d-block py-2 px-3 text-dark fw-semibold" data-bs-dismiss="offcanvas">Team</a></li>
-        <li class="mb-2"><a href="blog-details.html" class="d-block py-2 px-3 text-dark fw-semibold" data-bs-dismiss="offcanvas">Blog</a></li>
+        <li class="mb-2">
+            <a href="#servicesSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="d-flex justify-content-between align-items-center py-2 px-3 text-dark fw-semibold text-decoration-none">
+              Services <i class="fas fa-chevron-down" style="font-size:12px;"></i>
+            </a>
+            <ul class="collapse list-unstyled ps-4" id="servicesSubmenu">
+              <li><a href="services.html" class="d-block py-2 text-dark text-decoration-none" data-bs-dismiss="offcanvas">Services</a></li>
+              <li><a href="service-details.html" class="d-block py-2 text-dark text-decoration-none" data-bs-dismiss="offcanvas">Service Details</a></li>
+            </ul>
+          </li>
+        <li class="mb-2">
+            <a href="#pagesSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="d-flex justify-content-between align-items-center py-2 px-3 text-dark fw-semibold text-decoration-none">
+              Pages <i class="fas fa-chevron-down" style="font-size:12px;"></i>
+            </a>
+            <ul class="collapse list-unstyled ps-4" id="pagesSubmenu">
+              <li><a href="team.html" class="d-block py-2 text-dark text-decoration-none" data-bs-dismiss="offcanvas">Team</a></li>
+              <li><a href="projects.html" class="d-block py-2 text-dark text-decoration-none" data-bs-dismiss="offcanvas">Projects</a></li>
+            </ul>
+          </li>
+        <li class="mb-2">
+            <a href="#blogSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="d-flex justify-content-between align-items-center py-2 px-3 text-dark fw-semibold text-decoration-none">
+              Blog <i class="fas fa-chevron-down" style="font-size:12px;"></i>
+            </a>
+            <ul class="collapse list-unstyled ps-4" id="blogSubmenu">
+              <li><a href="blog.html" class="d-block py-2 text-dark text-decoration-none" data-bs-dismiss="offcanvas">Blog</a></li>
+              <li><a href="blog-details.html" class="d-block py-2 text-dark text-decoration-none" data-bs-dismiss="offcanvas">Blog Details</a></li>
+            </ul>
+          </li>
         <li class="mb-2"><a href="contact.html" class="d-block py-2 px-3 text-dark fw-semibold" data-bs-dismiss="offcanvas">Contact</a></li>
       </ul>
       <div class="mobile-menu mt-4 pt-4 border-top">
@@ -185,6 +179,7 @@
 
   <!-- ============================== HERO ============================== -->
   <section class="hero-sec bg-green hero-ptb">
+    <div class="hero-bg-pattern"></div>
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
@@ -201,11 +196,11 @@
             </div>
             <div class="hero-team-info d-flex align-items-center">
               <div class="team-members d-flex">
-                <div class="team-members-img"><img src="images/image (2).png" alt="profile" width="56" height="56"/></div>
-                <div class="team-members-img"><img src="images/image (3).png" alt="profile" width="56" height="56"/></div>
-                <div class="team-members-img"><img src="images/image (4).png" alt="profile" width="56" height="56"/></div>
-                <div class="team-members-img"><img src="images/image (5).png" alt="profile" width="56" height="56"/></div>
-                <div class="team-members-img"><img src="images/image (6).png" alt="profile" width="56" height="56"/></div>
+                <div class="team-members-img"><img src="images/emp1.png" alt="profile" width="56" height="56"/></div>
+                <div class="team-members-img"><img src="images/emp2.png" alt="profile" width="56" height="56"/></div>
+                <div class="team-members-img"><img src="images/emp3.png" alt="profile" width="56" height="56"/></div>
+                <div class="team-members-img"><img src="images/emp4.png" alt="profile" width="56" height="56"/></div>
+                <div class="team-members-img"><img src="images/emp5.png" alt="profile" width="56" height="56"/></div>
               </div>
               <div class="total-team-count">
                 <span>36k+</span>
@@ -216,7 +211,6 @@
         </div>
         <div class="col-lg-6">
           <div class="hero-images hero-style1">
-            <div class="hero-bg-pattern"></div>
             <div class="hero-feature-img feature-one">
               <img src="images/image (7).png" alt="hero-img" width="636" height="600"/>
             </div>
@@ -236,7 +230,7 @@
         <div class="col-lg-6">
           <div class="sec-images">
             <div class="sec-img-one">
-              <img src="images/image (7).png" alt="about-img"/>
+              <img src="images/image (9).png" alt="about-img"/>
             </div>
             <div class="sec-img-two">
               <img src="images/image (10).png" alt="about-img"/>
@@ -360,7 +354,7 @@
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="single-project">
             <div class="project-img">
-              <img src="images/image (18).png" alt="project" class="h-100" width="412" height="396" style="width:100%; object-fit:cover;"/>
+              <img src="images/project1.png" alt="project" class="h-100" width="412" height="396" style="width:100%; object-fit:cover;"/>
             </div>
             <div class="project-title">
               <div>
@@ -374,7 +368,7 @@
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="single-project">
             <div class="project-img">
-              <img src="images/image (19).png" alt="project" class="h-100" width="412" height="396" style="width:100%; object-fit:cover;"/>
+              <img src="images/project2.png" alt="project" class="h-100" width="412" height="396" style="width:100%; object-fit:cover;"/>
             </div>
             <div class="project-title">
               <div>
@@ -388,7 +382,7 @@
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="single-project">
             <div class="project-img">
-              <img src="images/image (20).png" alt="project" class="h-100" width="412" height="396" style="width:100%; object-fit:cover;"/>
+              <img src="images/project3.png" alt="project" class="h-100" width="412" height="396" style="width:100%; object-fit:cover;"/>
             </div>
             <div class="project-title">
               <div>
@@ -657,7 +651,7 @@
         <div class="col-lg-6 mb-4">
           <div class="blog-left-box blog-item">
             <div class="img-box" style="height:300px;">
-              <img src="images/image (21).png" alt="blog" class="h-100" width="588" height="569" style="width:100%; object-fit:cover; height:100%;"/>
+              <img src="images/service5.png" alt="blog" class="h-100" width="588" height="569" style="width:100%; object-fit:cover; height:100%;"/>
             </div>
             <div class="content-box">
               <div class="meta-box">
@@ -677,7 +671,7 @@
             <ul class="list-unstyled">
               <li class="blog-sidebar-box-item blog-item">
                 <div class="img-box">
-                  <img src="images/image (22).png" alt="blog" class="h-100" width="236" height="174" style="width:100%; object-fit:cover; height:80px;"/>
+                  <img src="images/image (10).png" alt="blog" class="h-100" width="236" height="174" style="width:100%; object-fit:cover; height:80px;"/>
                 </div>
                 <div class="content-box">
                   <div class="meta-box">
@@ -692,7 +686,7 @@
               </li>
               <li class="blog-sidebar-box-item blog-item">
                 <div class="img-box">
-                  <img src="images/image (23).png" alt="blog" class="h-100" width="236" height="174" style="width:100%; object-fit:cover; height:80px;"/>
+                  <img src="images/project4.png" alt="blog" class="h-100" width="236" height="174" style="width:100%; object-fit:cover; height:80px;"/>
                 </div>
                 <div class="content-box">
                   <div class="meta-box">
@@ -780,7 +774,7 @@
                     <li><a href="#">Our Projects</a></li>
                     <li><a href="#">Faq ask</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="blog-details.html">Blog</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                   </ul>
                 </div>
               </div>
@@ -840,3 +834,15 @@
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
