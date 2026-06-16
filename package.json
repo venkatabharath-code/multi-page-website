@@ -1,0 +1,26 @@
+{
+  "name": "multi-page-website",
+  "version": "1.0.0",
+  "description": "This project is a fully responsive multi-page website developed using HTML, CSS, and Bootstrap with a focus on creating a modern, clean, and professional user interface. The objective of this project was to build multiple interconnected pages while maintaining consistent styling, responsiveness, and user experience across the complete website.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.17.0",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "vite": "^8.0.16"
+  }
+}
